@@ -1,2 +1,2 @@
-# -new-england-facts-dom
-Interactive JavaScript project displaying facts about the six New England states using the DOM. The page dynamically updates information panels and images based on the selected state.
+# new-england-facts-dom
+Created an interactive New England state viewer using JavaScript switch statements and DOM manipulation to dynamically update content and images based on user selection.
