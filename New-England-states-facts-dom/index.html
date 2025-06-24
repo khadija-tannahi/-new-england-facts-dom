@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Project State Facts</title>
+
+
+    
+    <script src="states.js"></script>
+      
+      <script>
+        document.write('<link rel="stylesheet" type="text/css" href="style/stylesheet.css">');
+      </script>
+
+  </head>
+
+  <body>
+    <header>
+
+      <div>
+
+        <img src="images/2.jpg" id="adBanner" alt="ad">
+
+      </div>
+
+      <div id="title">State</div>
+      
+    </header>
+
+
+    <main>
+
+      <div class="container">
+
+      <aside>
+
+        <div id="buttons">
+
+          <input type="button"  class="button"  value="Connecticut" onclick="state('ct')">
+          <input type="button"  class="button"  value="Maine" onclick="state('mn')">
+          <input type="button"  class="button"  value="Massachusetts" onclick="state('ma')">
+          <input type="button"  class="button"  value="New Hampshire" onclick="state('nh')">
+          <input type="button"  class="button"  value="Rhode Island" onclick="state('ri')">
+          <input type="button"  class="button"  value="Vermont" onclick="state('vt')">
+          
+    
+    
+        </div>
+  
+
+      </aside>
+
+      <div id="one">
+  
+        <p id="info"></p>
+
+      </div>
+
+      <div id="two">
+  
+        <div id="img">
+          <img src="#" id="pic" alt="image">
+        </div>
+
+        <div id="img2">
+          <img src="#" id="pic2" alt="image">
+        </div>
+        
+        
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+      <script>
+
+        window.onload=rotate;
+  
+        var theAd=0
+        var adImages = new 
+        Array("images/1.jpg", "images/2.jpg", "images/3.jpg");
+  
+        function rotate ()  {
+          theAd++;
+          if (theAd === adImages.length){
+            theAd=0
+          }
+  
+          document.getElementById ("adBanner").src=adImages[theAd]
+          //setTimeout("rotate()",7500)
+          setTimeout(rotate, 3000)
+        }
+  
+  
+  
+      </script>
+
+    </main>
+
+    <footer>
+      <p>
+        &copy; JavaScript_KT
+      </p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+</html>
